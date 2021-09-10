@@ -6,12 +6,12 @@ class Pizza {
   this.toppings = toppings;
   this.quantity = quantity;
   this.delivery = delivery;
-  this.basePrice = 600;
+  // this.basePrice = 600;
   }
 
   typePrice(){
     if (this.type == "CHICKEN SUPREME"){
-      this.price = 700;
+      this.price = 7500;
       return this.price;
     } else {
       return this.price;
@@ -20,23 +20,23 @@ class Pizza {
 
   priceBySize(){
     if (this.size == "Large"){
-      return 1500;
+      return 72000;
     } else if (this.size == "Medium"){
-      return 1000;
+      return 50000;
     } else {
-      return 500;
+      return 30000;
     }
   }
 
   crustPrice(){
     if (this.crust == "Tripple Cheese Crust"){
-      return 400;
+      return 5000;
     } else if (this.crust == "Double Cheese Crust"){
-      return 300;
+      return 4000;
     } else if (this.crust == "Puff Pastry"){
-      return 200;
+      return 3000;
     } else if (this.crust == "Cheesy Crust"){
-      return 150;
+      return 2000;
     } else {
       return 0;
     }
@@ -44,7 +44,7 @@ class Pizza {
 
   toppingsPrice(){
     if (this.toppings == "Extra Chicken"){
-      return 200;
+      return 3500;
     } else {
       return 0;
     }
@@ -52,7 +52,7 @@ class Pizza {
 
   deliveryPrice(){
     if (this.delivery == true){
-      return 200;
+      return 5000;
     } else {
       return 0;
     }
